@@ -4,159 +4,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gokul S - Technical/Animation Lead Resume</title>
+    <title>Gokul S - Senior 3D Artist</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
-            font-family: 'Calibri', 'Arial', sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f4;
-            padding: 20px;
+            color: #2d3748;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
         }
         
         .container {
             max-width: 900px;
             margin: 0 auto;
-            background-color: white;
-            padding: 40px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            background: white;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            border-radius: 8px;
+            overflow: hidden;
         }
         
         header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 40px;
             text-align: center;
-            border-bottom: 3px solid #2c3e50;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
         }
         
         h1 {
             font-size: 2.5em;
-            color: #2c3e50;
-            margin-bottom: 10px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
         }
         
         .subtitle {
             font-size: 1.2em;
-            color: #34495e;
+            font-weight: 300;
             margin-bottom: 15px;
+            opacity: 0.95;
         }
         
         .contact-info {
             font-size: 0.95em;
-            color: #555;
+            font-weight: 300;
+            opacity: 0.9;
             line-height: 1.8;
         }
         
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+            transition: border-color 0.3s;
+        }
+        
+        .contact-info a:hover {
+            border-bottom-color: white;
+        }
+        
+        .demoreel {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .demoreel a {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 10px 24px;
+            border-radius: 25px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        
+        .demoreel a:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        section {
+            margin-bottom: 35px;
+        }
+        
         h2 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 8px;
-            margin-top: 30px;
+            color: #1e3a8a;
+            font-size: 1.4em;
+            font-weight: 700;
             margin-bottom: 15px;
-            font-size: 1.5em;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #3b82f6;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
         
         h3 {
-            color: #34495e;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-size: 1.2em;
+            color: #1e40af;
+            font-size: 1.1em;
+            font-weight: 600;
+            margin: 15px 0 8px;
+        }
+        
+        p {
+            margin-bottom: 12px;
+            color: #4b5563;
         }
         
         .job-title {
-            font-weight: bold;
-            color: #2c3e50;
+            font-weight: 600;
+            color: #1e3a8a;
+            font-size: 1.05em;
             margin-top: 15px;
         }
         
         .job-date {
-            font-weight: bold;
-            color: #7f8c8d;
+            color: #6b7280;
             font-style: italic;
+            font-size: 0.95em;
             margin-bottom: 10px;
         }
         
-        .section-subtitle {
-            font-weight: bold;
-            color: #34495e;
-            margin-top: 15px;
-            margin-bottom: 8px;
-        }
-        
         ul {
-            margin-left: 20px;
-            margin-bottom: 15px;
+            margin: 10px 0 15px 20px;
         }
         
         li {
             margin-bottom: 8px;
+            color: #4b5563;
+            line-height: 1.6;
         }
         
-        .competency {
-            margin-bottom: 15px;
+        li strong {
+            color: #1e3a8a;
         }
         
-        .competency-title {
-            font-weight: bold;
-            color: #2c3e50;
-        }
-        
-        .skill-category {
+        .skill-row {
+            display: flex;
             margin-bottom: 10px;
+            padding: 8px 0;
         }
         
         .skill-label {
-            font-weight: bold;
-            color: #34495e;
+            font-weight: 600;
+            color: #1e3a8a;
+            min-width: 140px;
         }
         
-        .tool-item {
-            margin-bottom: 15px;
-        }
-        
-        .tool-title {
-            font-weight: bold;
-            color: #2c3e50;
-        }
-        
-        .note {
-            font-style: italic;
-            color: #555;
-            margin-top: 10px;
-            padding: 10px;
-            background-color: #ecf0f1;
-            border-left: 4px solid #3498db;
+        .skill-row span:last-child {
+            color: #4b5563;
         }
         
         @media print {
             body {
-                background-color: white;
+                background: white;
                 padding: 0;
             }
             
             .container {
                 box-shadow: none;
-                padding: 20px;
+                border-radius: 0;
+            }
+            
+            header {
+                background: #1e3a8a;
             }
         }
         
         @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+            
             .container {
-                padding: 20px;
+                border-radius: 0;
+            }
+            
+            header, .content {
+                padding: 25px;
             }
             
             h1 {
                 font-size: 2em;
             }
             
-            h2 {
-                font-size: 1.3em;
+            .skill-row {
+                flex-direction: column;
+            }
+            
+            .skill-label {
+                margin-bottom: 4px;
             }
         }
     </style>
@@ -165,197 +211,105 @@
     <div class="container">
         <header>
             <h1>GOKUL S</h1>
-            <div class="subtitle">Technical/Animation Lead – 3D Pipeline & Production</div>
+            <div class="subtitle">Senior 3D Artist</div>
             <div class="contact-info">
-                Chennai, Tamil Nadu, 600129<br>
-                Phone: 978-999-1826<br>
-                Email: gokul23gs@gmail.com<br>
-                LinkedIn: <a href="https://www.linkedin.com/in/gokul-s-110121" target="_blank">www.linkedin.com/in/gokul-s-110121</a>
+                Chennai, Tamil Nadu | 978-999-1826 | gokul23gs@gmail.com<br>
+                <a href="https://www.linkedin.com/in/gokul-s-110121" target="_blank">linkedin.com/in/gokul-s-110121</a>
+            </div>
+            <div class="demoreel">
+                <a href="https://vimeo.com/1151556123?share=copy&fl=sv&fe=ci" target="_blank">🎬 View Demo Reel</a>
             </div>
         </header>
 
-        <section>
-            <h2>PROFESSIONAL SUMMARY</h2>
-            <p>Technical 3D Artist and Pipeline Developer with 8+ years of production experience delivering high-quality 3D content for digital platforms. Recently completed advanced character animation training from AnimSchool (December 2025), one of the industry's most respected online animation schools founded by veteran Pixar, DreamWorks, and Blue Sky animators. Proven track record in building production automation tools, optimizing workflows, and leading quality initiatives. Combines strong hands-on animation capabilities with technical leadership—experienced in Maya, Blender, Substance Painter, and Python scripting for pipeline automation. Recognized as production and quality topper with expertise in creating scalable workflows for high-volume content delivery.</p>
-        </section>
+        <div class="content">
+            <section>
+                <h2>Summary</h2>
+                <p>Senior 3D Artist with 8+ years building production pipelines and automation tools. AnimSchool graduate (Dec 2025) trained by Pixar/DreamWorks veterans. Expert in Maya, Blender, Python scripting, and pipeline optimization. Proven track record: 91%+ efficiency, production quality topper, developed 5+ custom tools reducing workflow time by 98%.</p>
+            </section>
 
-        <section>
-            <h2>CORE COMPETENCIES</h2>
-            
-            <div class="competency">
-                <div class="competency-title">Technical Pipeline & Automation</div>
-                <p>Python scripting for production automation; Maya API (OpenMaya) development; Custom tool creation; Workflow optimization; Quality control systems; Production tracking & metrics</p>
-            </div>
-            
-            <div class="competency">
-                <div class="competency-title">3D Production & Animation</div>
-                <p>Maya (Expert); Blender 5.0 (Expert); 3ds Max (Expert); ZBrush (Very Good); Substance Painter (Excellent); Character animation; nCloth physics simulation</p>
-            </div>
-            
-            <div class="competency">
-                <div class="competency-title">Compositing & Post-Production</div>
-                <p>After Effects (Excellent); Photoshop (Excellent); Motion graphics; VFX integration; Live-action compositing workflows</p>
-            </div>
-            
-            <div class="competency">
-                <div class="competency-title">Leadership & Delivery</div>
-                <p>Pipeline standardization; Team mentorship; Quality assurance; Cross-functional collaboration; High-volume content delivery; Production KPI management</p>
-            </div>
-        </section>
+            <section>
+                <h2>Experience</h2>
+                
+                <div class="job-title">Senior 3D Artist | Amazon.com, Chennai</div>
+                <div class="job-date">April 2018 – Present</div>
+                <ul>
+                    <li>Built <strong>Transfer Map Tool</strong> (Python/Maya) automating high-to-low poly texture baking workflows</li>
+                    <li>Created <strong>Mesh Penetration Tool</strong> detecting geometry intersections for quality control</li>
+                    <li>Developed <strong>Wrinkle Generator</strong> using nCloth physics for procedural character deformation</li>
+                    <li>Built <strong>APB Production Tracker</strong> reducing monthly calculations from 4 hours to 5 minutes (98% improvement)</li>
+                    <li>Created custom Maya API tools for pivot management, transforms, and mesh manipulation</li>
+                    <li>Developed Kryten (3D Photogrammetry) and Dimension Ninja automation systems</li>
+                    <li>Maintained 91%+ efficiency and 100% utilization in high-volume AR content production</li>
+                    <li>Converted Maya MEL/Python workflows to Blender Python across production stages</li>
+                </ul>
+                
+                <div class="job-title">Motion Graphic Artist | Vidzpro Services, Bangalore</div>
+                <div class="job-date">May 2016 – April 2018</div>
+                <ul>
+                    <li>Delivered 3D animations, VFX, and motion graphics for client projects end-to-end</li>
+                    <li>Developed reusable animation templates and motion design systems</li>
+                </ul>
+            </section>
 
-        <section>
-            <h2>PROFESSIONAL EXPERIENCE</h2>
-            
-            <div class="job-title">3D Artist | Amazon.com, Chennai, Tamil Nadu</div>
-            <div class="job-date">April 2018 – Present</div>
-            
-            <div class="section-subtitle">Technical Pipeline Development & Custom Tool Creation:</div>
-            <ul>
-                <li>Developed <strong>Transfer Map Tool</strong> in Python for Maya to automate high-poly to low-poly texture transfer workflows, significantly reducing manual texture baking time</li>
-                <li>Created <strong>Mesh Penetration Identification Tool</strong> to automatically detect and visualize mesh intersections, improving quality control efficiency</li>
-                <li>Built <strong>Wrinkle Generator Tool</strong> leveraging nCloth physics simulation to procedurally create realistic wrinkles on character meshes</li>
-                <li>Developed Python automation scripts reducing monthly productivity calculation time from 4 hours to 5 minutes through APB Production Tracker tool</li>
-                <li>Created custom Maya tools for pivot management, transformation workflows, and mesh manipulation using Maya API (OpenMaya)</li>
-                <li>Built internal production automation systems including Kryten (3D Photogrammetry) and Dimension Ninja</li>
-                <li>Established production standards and quality control workflows for AR content delivery</li>
-            </ul>
-            
-            <div class="section-subtitle">Production & Quality Leadership:</div>
-            <ul>
-                <li>Achieved production and quality topper recognition for consistent high-volume, high-quality output</li>
-                <li>Created high-quality 3D objects in Maya and Substance Painter based on customer images for AR experiences</li>
-                <li>Maintained 91%+ efficiency rating while managing complex 3D asset pipelines</li>
-                <li>Developed and documented reusable workflows, templates, and best practices for team adoption</li>
-            </ul>
-            
-            <div class="section-subtitle">Cross-Platform Development:</div>
-            <ul>
-                <li>Converted Maya MEL scripts and Python workflows to Blender Python, managing axis differences and API translations</li>
-                <li>Worked with comprehensive data extraction and compatibility pipelines spanning multiple production stages</li>
-                <li>Integrated SharePoint data sources with production tracking systems for real-time metrics</li>
-            </ul>
-            
-            <div class="job-title">2D and 3D Motion Graphic Artist | Vidzpro Services, Bangalore, Karnataka</div>
-            <div class="job-date">May 2016 – April 2018</div>
-            <ul>
-                <li>Conceptualized and delivered compelling 3D animations, visual effects, and motion graphics for logos, symbols, backgrounds, and special features</li>
-                <li>Managed end-to-end production from concept through final delivery for client projects</li>
-                <li>Developed motion design language and reusable animation templates for efficiency</li>
-            </ul>
-        </section>
+            <section>
+                <h2>Education</h2>
+                <h3>3D Character Animation Certificate | AnimSchool (Dec 2025)</h3>
+                <p>Industry-leading program by Pixar/DreamWorks/Blue Sky veterans covering character performance, timing, appeal, and production workflows for animation leadership.</p>
+                
+                <h3>B.Sc. Visual Communication | Madras Christian College (2012-2015)</h3>
+            </section>
 
-        <section>
-            <h2>EDUCATION & SPECIALIZED TRAINING</h2>
-            
-            <h3>3D Character Animation Certificate | AnimSchool</h3>
-            <div class="job-date">December 2025</div>
-            <p>Completed rigorous character animation program from AnimSchool, the premier online animation school founded by industry veterans from Pixar, DreamWorks, and Blue Sky Studios. This intensive training provides:</p>
-            <ul>
-                <li>Advanced character performance and acting principles essential for kids content</li>
-                <li>Professional-level animation timing, spacing, and appeal techniques</li>
-                <li>Industry-standard workflows and best practices from feature film animators</li>
-                <li>Direct mentorship model ensuring production-ready animation quality</li>
-            </ul>
-            <div class="note">AnimSchool's curriculum is specifically designed to train animators to studio standards, making it highly relevant for leading animation teams and establishing quality benchmarks for character-driven kids shorts.</div>
-            
-            <h3>Bachelor of Science: Visual Communication</h3>
-            <p>Madras Christian College, Chennai | April 2012 – April 2015</p>
-            
-            <h3>High School Diploma</h3>
-            <p>Adiparashakthi Matriculation Higher Secondary, Melmaruvathur | April 2010 – April 2012</p>
-        </section>
+            <section>
+                <h2>Technical Skills</h2>
+                <div class="skill-row">
+                    <span class="skill-label">3D Software:</span>
+                    <span>Maya, Blender 5.0, 3ds Max, ZBrush, Substance Painter</span>
+                </div>
+                <div class="skill-row">
+                    <span class="skill-label">Compositing:</span>
+                    <span>After Effects, Photoshop</span>
+                </div>
+                <div class="skill-row">
+                    <span class="skill-label">Scripting:</span>
+                    <span>Python, Maya API (OpenMaya), Blender bmesh, MEL</span>
+                </div>
+                <div class="skill-row">
+                    <span class="skill-label">Pipeline:</span>
+                    <span>Production tracking, workflow automation, quality systems, SharePoint integration</span>
+                </div>
+            </section>
 
-        <section>
-            <h2>TECHNICAL SKILLS</h2>
-            
-            <div class="skill-category">
-                <span class="skill-label">3D Software:</span> Maya (Expert), Blender 5.0 (Expert), 3ds Max (Expert), ZBrush (Very Good)
-            </div>
-            
-            <div class="skill-category">
-                <span class="skill-label">Texturing & Materials:</span> Substance Painter (Excellent)
-            </div>
-            
-            <div class="skill-category">
-                <span class="skill-label">Compositing & VFX:</span> After Effects (Excellent), Photoshop (Excellent)
-            </div>
-            
-            <div class="skill-category">
-                <span class="skill-label">Scripting & Automation:</span> Python (Good), Maya API/OpenMaya, Blender bmesh, MEL
-            </div>
-            
-            <div class="skill-category">
-                <span class="skill-label">Production Tools:</span> SharePoint integration, Production tracking systems, Quality metrics dashboards
-            </div>
-            
-            <div class="skill-category">
-                <span class="skill-label">Workflow Expertise:</span> Character animation, Rigging fundamentals, Scene optimization, File management, Render pipeline, Batch processing
-            </div>
-        </section>
+            <section>
+                <h2>Custom Tools</h2>
+                <ul>
+                    <li><strong>Transfer Map Tool:</strong> Automated texture baking for asset optimization</li>
+                    <li><strong>Mesh Penetration Tool:</strong> Geometry intersection detection for QC</li>
+                    <li><strong>Wrinkle Generator:</strong> nCloth-based procedural deformation</li>
+                    <li><strong>APB Production Tracker:</strong> 98% time reduction in productivity calculations</li>
+                    <li><strong>Maya API Tools:</strong> Pivot, transform, and mesh manipulation suite</li>
+                </ul>
+            </section>
 
-        <section>
-            <h2>CUSTOM TOOLS DEVELOPED</h2>
-            
-            <div class="tool-item">
-                <div class="tool-title">Transfer Map Tool (Maya/Python)</div>
-                <p>Automated texture transfer system for baking high-poly detail to low-poly models, streamlining asset optimization workflows</p>
-            </div>
-            
-            <div class="tool-item">
-                <div class="tool-title">Mesh Penetration Identification Tool (Maya/Python)</div>
-                <p>Quality control tool that automatically detects and visualizes mesh intersections, enabling rapid identification of geometry issues</p>
-            </div>
-            
-            <div class="tool-item">
-                <div class="tool-title">Wrinkle Generator (Maya/Python)</div>
-                <p>Procedural wrinkle creation tool using nCloth physics simulation for realistic character cloth and skin deformation</p>
-            </div>
-            
-            <div class="tool-item">
-                <div class="tool-title">APB Production Tracker (Python)</div>
-                <p>Production automation system reducing monthly productivity calculation time by 98% (4 hours to 5 minutes)</p>
-            </div>
-            
-            <div class="tool-item">
-                <div class="tool-title">Custom Maya API Tools (Python/OpenMaya)</div>
-                <p>Suite of tools for pivot management, transformation workflows, and mesh manipulation operations</p>
-            </div>
-        </section>
+            <section>
+                <h2>Certifications</h2>
+                <ul>
+                    <li>AnimSchool 3D Character Animation (2025)</li>
+                    <li>Complete 3D Animation Fundamentals (2021)</li>
+                    <li>Python for Absolute Beginners (2020)</li>
+                    <li>Master in 3D, Diploma in Edit & Finish (2014-2015)</li>
+                </ul>
+            </section>
 
-        <section>
-            <h2>CERTIFICATIONS</h2>
-            <ul>
-                <li>3D Character Animation Certificate – AnimSchool (December 2025)</li>
-                <li>Complete 3D Animation Fundamentals (May 2021)</li>
-                <li>Python for Absolute Beginners (July 2020)</li>
-                <li>Master in 3D (December 2014)</li>
-                <li>Diploma in 3D Modeling (March 2015)</li>
-                <li>Diploma in Edit & Finish (August 2015)</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>KEY ACHIEVEMENTS</h2>
-            <ul>
-                <li><strong>AnimSchool Graduate</strong> – Completed industry-leading character animation program (December 2025)</li>
-                <li><strong>Developed 5+ custom production tools</strong> in Python for Maya, improving pipeline efficiency and quality control</li>
-                <li>Production and quality topper at Amazon</li>
-                <li>Active Python script developer for internal production automation</li>
-                <li>Key participant in creating department-wide projects: Kryten (3D Photogrammetry), Dimension Ninja</li>
-                <li>Developed APB Production Tracker reducing manual workflow time by 98%</li>
-                <li>Maintained 91%+ efficiency and 100% utilization in high-volume production environment</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>LANGUAGES</h2>
-            <p>English (Very Good) | Tamil (Excellent) | Hindi (Good)</p>
-        </section>
-
-        <section>
-            <h2>ADDITIONAL INTERESTS</h2>
-            <p>Portrait & Figure Drawing | 3D Pipeline Innovation | Production Optimization | Character Animation</p>
-        </section>
+            <section>
+                <h2>Key Achievements</h2>
+                <ul>
+                    <li>Production and quality topper at Amazon</li>
+                    <li>Developed 5+ production automation tools</li>
+                    <li>91%+ efficiency, 100% utilization in high-volume environment</li>
+                    <li>Key contributor to Kryten and Dimension Ninja department projects</li>
+                </ul>
+            </section>
+        </div>
     </div>
 </body>
 </html>
